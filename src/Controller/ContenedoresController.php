@@ -20,6 +20,7 @@ class ContenedoresController extends AbstractController{
  */
     public function show($slug){
         $cosas = ["ostia", "cariño","tiriviento"];
+        dump($slug, $this);
         return $this->render('listar.html.twig',['title'=>$slug, 'cosas'=>$cosas]);
     }
 
